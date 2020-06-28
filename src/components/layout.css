@@ -42,6 +42,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: inherit;
 }
 a:active,
 a:hover {
@@ -439,9 +440,9 @@ blockquote {
   margin-right: 1.45rem;
   margin-top: 0;
   margin-bottom: 1.45rem;
-  background: gainsboro;
-  border-left: 3px solid #737373;
+  border-left: 3px solid #282c34;
   padding: 8px;
+  padding-left: 1.45rem;
   border-radius: 2px;
 }
 form {
