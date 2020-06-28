@@ -4,6 +4,7 @@ module.exports = {
     description: `A wiki about random topics.`,
     author: `Andreas Willi`,
   },
+  pathPrefix: "/wiki",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
