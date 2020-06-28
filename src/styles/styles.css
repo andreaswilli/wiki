@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Inter";
+  font-weight: 400;
+  src: url("../../assets/fonts/Inter.otf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 600;
+  src: url("../../assets/fonts/Inter.otf");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-weight: 700;
+  src: url("../../assets/fonts/Inter.otf");
+}
+
+.gatsby-code-button-container {
+  top: 19px;
+  right: 11px;
+  fill: white;
+  height: 0;
+}
+
+.gatsby-code-button:hover::after {
+  display: none !important;
+}

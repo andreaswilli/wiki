@@ -1,22 +1,65 @@
 import React from "react"
-import { Link } from "gatsby"
+import qs from "qs"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+import "./index.css"
 
-export default IndexPage
+export default ({ data, location }) => {
+  const {
+    allMarkdownRemark: { nodes: posts },
+  } = data
+  const tag = qs.parse(location.search, { ignoreQueryPrefix: true }).tag
+
+  return (
+    <Layout>
+      <SEO title={tag || "Pages"} />
+      <h1>
+        {tag ? (
+          <>
+            <span>Tag: {tag} </span>
+            <Link to="/">x</Link>
+          </>
+        ) : (
+          "Pages"
+        )}
+      </h1>
+      <ul className="posts">
+        {posts
+          .filter(
+            ({ frontmatter: { tags } }) =>
+              tag === undefined || tags.indexOf(tag) !== -1
+          )
+          .sort(({ frontmatter: { date: a } }, { frontmatter: { date: b } }) =>
+            a < b ? 1 : a > b ? -1 : 0
+          )
+          .map(({ frontmatter: { path, title }, excerpt }) => (
+            <li key={path} className="posts__post">
+              <Link to={path} className="posts__post__link">
+                <h3>{title}</h3>
+                {excerpt && <div>{excerpt}</div>}
+              </Link>
+            </li>
+          ))}
+      </ul>
+    </Layout>
+  )
+}
+
+export const allPostsQuery = graphql`
+  query AllPosts {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          title
+          path
+          date
+          tags
+        }
+        excerpt
+      }
+    }
+  }
+`
