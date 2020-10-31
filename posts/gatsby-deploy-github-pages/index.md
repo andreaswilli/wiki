@@ -2,7 +2,7 @@
 path: /gatsby-deploy-github-pages
 title: "Add Gatsby.js to Repo and Deploy to GitHub Pages"
 date: "2020-06-28"
-tags: ["Gatsby.js", "GitHub Pages"]
+tags: ["Gatsby.js", "GitHub Pages", "Coding"]
 source: https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/
 ---
 
