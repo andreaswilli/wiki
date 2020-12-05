@@ -34,7 +34,7 @@ Remove the sd card from the Raspberry Pi once it has powered off. Then insert it
 diskutil list
 ```
 
-Look for a device that machtes the size of your sd card. The device probably has a partition called `boot`.
+Look for a device that matches the size of your sd card. The device probably has a partition called `boot`.
 
 The device will be called something like `/dev/disk2`.
 
