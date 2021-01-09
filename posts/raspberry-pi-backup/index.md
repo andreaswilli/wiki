@@ -48,6 +48,12 @@ Including useful information like the current date or content of the backup in t
 
 > This command can take some time and will not indicate any progress - just hang on.
 
+### Eject sd card
+
+```bash
+sudo diskutil eject /dev/disk2
+```
+
 ## Restore
 
 ### Insert sd card and identify device name
