@@ -3,10 +3,20 @@
 }
 
 .post__header__date {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
-  color: #a2a2a2;
+  color: white;
+  background: #ff3b30;
+  margin-right: 8px;
   margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.post__header__date__icon {
+  margin-right: 4px;
 }
 
 .post__header__title {
@@ -14,17 +24,46 @@
   margin-bottom: 16px;
 }
 
+.post__header__tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .post__header__tag {
-  border-radius: 10px;
-  background: #9ce5fb;
-  color: #096784;
-  margin-right: 12px;
-  padding: 2px 10px;
+  border-radius: 8px;
+  background: #007aff;
+  color: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.post__header__tag__icon {
+  margin-right: 4px;
+}
+
+.post__header__source {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  color: white;
+  background: #34c759;
+  margin-bottom: 8px;
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 6px;
+  border-radius: 4px;
 }
 
 .post__header__source:visited {
-  color: inherit;
+  color: white;
+}
+
+.post__header__source__icon {
+  margin-right: 4px;
 }

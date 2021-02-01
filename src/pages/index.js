@@ -38,7 +38,7 @@ export default ({ data, location }) => {
           .map(({ frontmatter: { path, title }, excerpt }) => (
             <li key={path} className="posts__post">
               <Link to={path} className="posts__post__link">
-                <h3>{title}</h3>
+                <h3 className="posts__post__link__title">{title}</h3>
                 {excerpt && <div>{excerpt}</div>}
               </Link>
             </li>

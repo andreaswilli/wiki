@@ -15,14 +15,23 @@
   color: inherit;
   text-decoration: none;
   border-radius: 4px;
+  border: 4px solid transparent;
 }
 
-.posts__post__link:hover {
-  background: rgba(93, 199, 86, 0.1);
+.posts__post__link:hover,
+.posts__post__link:focus {
+  background: rgba(0, 122, 255, 0.1);
+  border-left-color: rgba(0, 122, 255, 0.3);
+  outline: none;
 }
 
-.posts__post__link h3 {
+.posts__post__link__title {
   margin-bottom: 0;
+}
+
+.posts__post__link:hover .posts__post__link__title,
+.posts__post__link:focus .posts__post__link__title {
+  text-decoration: underline;
 }
 
 .posts__post__link div {
