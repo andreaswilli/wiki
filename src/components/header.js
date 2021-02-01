@@ -23,6 +23,7 @@ const Header = ({ siteTitle }) => (
           style={{
             textDecoration: `none`,
             display: "flex",
+            alignItems: "center",
           }}
         >
           <FaCode style={{ marginRight: "8px" }} />
