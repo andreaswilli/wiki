@@ -2,7 +2,7 @@
 path: /export-apple-books
 title: "Export Books from Apple Books on macOS"
 date: "2022-08-28"
-tags: ["Ebooks", "macOS"]
+tags: ["Apple Books", "macOS"]
 ---
 
 Apple Books stores the books in the following location (note: Finder prevents
