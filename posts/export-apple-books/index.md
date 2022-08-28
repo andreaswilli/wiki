@@ -9,5 +9,5 @@ Apple Books stores the books in the following location (note: Finder prevents
 you from opening this directory, so it needs to be opened with the cli):
 
 ```zsh
-cd "~/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents"
+open "~/Library/Mobile Documents/iCloud~com~apple~iBooks/Documents"
 ```
