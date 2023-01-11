@@ -15,7 +15,7 @@
     "gatsby-remark-code-buttons": "^2.0.4",
     "gatsby-remark-prismjs": "^3.5.6",
     "gatsby-source-filesystem": "^2.3.13",
-    "gatsby-transformer-remark": "^2.8.19",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.5.6",
     "prismjs": "^1.21.0",
     "prop-types": "^15.7.2",
